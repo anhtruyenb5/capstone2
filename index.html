@@ -17,7 +17,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Style CSS -->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
 <body>
@@ -55,8 +55,8 @@
                       <label class="theme-switch" for="checkbox">
                         <input type="checkbox" id="checkbox">
                         <div class="mode-container">
-                          <i class="gg-sun"></i>
-                          <i class="gg-moon"></i>
+                          <i class="fa-sun"></i>
+                          <i class="fa-star-and-crescent"></i>
                         </div>
                       </label>
                     </div>
@@ -1086,6 +1086,53 @@
     </div>
     <!-- //footer fourth section (text) -->
   </footer>
+
+
+  <!-- Đổi light and dark-->
+  <script src="./asset/JS/theme-change.js"></script>
+  <script>
+    function autoType(elementClass, typingSpeed) {
+      var thhis = $(elementClass);
+      thhis.css({
+        "position": "relative",
+        "display": "inline-block"
+      });
+      thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+      thhis = thhis.find(".text-js");
+      var text = thhis.text().trim().split('');
+      var amntOfChars = text.length;
+      var newString = "";
+      thhis.text("|");
+      setTimeout(function () {
+        thhis.css("opacity", 1);
+        thhis.prev().removeAttr("style");
+        thhis.text("");
+        for (var i = 0; i < amntOfChars; i++) {
+          (function (i, char) {
+            setTimeout(function () {
+              newString += char;
+              thhis.text(newString);
+            }, i * typingSpeed);
+          })(i + 1, text[i]);
+        }
+      }, 1500);
+    }
+
+    $(document).ready(function () { 
+      autoType(".type-js", 200);
+    });
+  </script>
+
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
