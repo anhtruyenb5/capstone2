@@ -5112,7 +5112,7 @@ ul.twitter-feed a:hover {
 
     .navbar-light .navbar-nav .nav-link {
         font-size: 14px;
-        padding: 0 .4rem;
+        padding: 0 1.2rem;
     }
 
     .offer-name h4 {
@@ -5135,6 +5135,7 @@ ul.twitter-feed a:hover {
 @media(max-width: 1080px) {
     .navbar-light .navbar-nav .nav-link {
         font-size: 13px;
+        padding: 0 1.2rem;
     }
 
     #agileinfo-nav_search {
@@ -6056,6 +6057,7 @@ ul.twitter-feed a:hover {
 
     .navbar-light .navbar-nav .nav-link {
         font-size: 14px;
+        padding: 0 1.2rem;
     }
 
     ul.multi-column-dropdown li a {
