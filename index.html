@@ -1132,6 +1132,77 @@
     });
   </script>
 
+<!-- popup modal -->
+<script src="js/jquery.magnific-popup.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+      fixedContentPos: false,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+  });
+</script>
+
+<!-- Back to top -->
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+  $(document).ready(function () {
+    /*
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear' 
+      };
+    */
+
+    $().UItoTop({
+      easingType: 'easeOutQuart'
+    });
+
+  });
+</script>
+<!-- //here ends scrolling icon -->
+<!-- js -->
+<script src="./asset/JS/jquery-1.11.1.min.js"></script>
+
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="./asset/JS/move-top.js"></script>
+<script type="text/javascript" src="./asset/JS/easing.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function ($) {
+    $(".scroll").click(function (event) {
+      event.preventDefault();
+      $('html,body').animate({
+        scrollTop: $(this.hash).offset().top
+      }, 1000);
+    });
+  });
+</script>
+<!-- start-smoth-scrolling -->
+
+<!-- nav smooth scroll -->
+<script>
+  $(document).ready(function () {
+    $(".dropdown").hover(
+      function () {
+        $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+        $(this).toggleClass('open');
+      },
+      function () {
+        $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+        $(this).toggleClass('open');
+      }
+    );
+  });
+</script>
 
 
   <!-- Optional JavaScript -->

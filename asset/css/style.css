@@ -2655,7 +2655,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
 /*-- middle section --*/
 
 .join-w3l1 {
-    background: url(./asset/img/bg.jpg) no-repeat center fixed;
+    background: url(../img/bg.jpg) no-repeat center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2736,7 +2736,7 @@ button:hover {
     height: 32px;
     border: none;
     text-indent: 100%;
-    background: url(../images/arrow.png) no-repeat 0px 0px;
+    background: url(../img/move-up.png) no-repeat 0px 0px;
 }
 
 #toTopHover {
