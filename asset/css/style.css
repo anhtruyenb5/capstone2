@@ -95,10 +95,6 @@ label {
     --shadow-color: rgb(0 0 0 / 3%);
     --box-shadow: rgb(0 0 0 / 41%);
     --iframe-filter: grayscale(0%);
-    --banner-1: url(./asset/img/banner1.png) no-repeat center;
-    --banner-2: url(./asset/img/banner2.png) no-repeat center;
-    --banner-3: url(./asset/img/banner3.png) no-repeat center;
-    --banner-4: url(./asset/img/banner4.png) no-repeat center;
 }
 
 [data-theme="dark"] {
@@ -123,10 +119,6 @@ label {
     --shadow-color: rgb(23 19 19);
     --box-shadow: rgb(13 7 7);
     --iframe-filter: grayscale(100%);
-    --banner-1: url(./asset/img/banner1.png) no-repeat center;
-    --banner-2: url(./asset/img/banner2.png) no-repeat center;
-    --banner-3: url(./asset/img/banner3.png) no-repeat center;
-    --banner-4: url(./asset/img/banner4.png) no-repeat center;
 }
 
 /*-- top-header --*/
@@ -2589,7 +2581,7 @@ span.item_price {
 }
 
 .product-sec1.product-sec2 {
-    background: var(--primary-color);
+    background: var(--primary-dark);
     position: relative;
     border-radius: 8px;
 }
@@ -2624,21 +2616,21 @@ p.nut-middle {
 /*-- search --*/
 
 #agileinfo-nav_search {
-    outline: none;
+    font-size: 16px;
+    padding: 12px 20px;
+    color: black;
+    border-radius: 4px;
+    background: var(--border-color-light);
     border: none;
-    color: #fff;
-    font-size: 14px;
-    background: transparent;
-    padding: 10px 10px;
-    width: 100%;
-    cursor: pointer;
-    border: 1px solid rgb(251 251 251 / 23%);
+    transition: all .25s ease-in-out;
 }
 
-#agileinfo-nav_search option {
-    color: var(--heading-color);
-    background: var(--bg-color);
+.agileinfo-nav_search:hover {
+    background: var(--secondary-color);
+    color: #fff;
+    transition: 0.3s ease-out;
 }
+
 
 /*-- //search --*/
 nav.navbar.navbar-expand-lg.navbar-light {
@@ -2746,8 +2738,6 @@ button:hover {
 }
 
 /*-- //to-top --*/
-/* //movetop styling */
-/*-- bottom-to-top --*/
 
 #toTop {
     display: none;
@@ -2761,7 +2751,7 @@ button:hover {
     height: 64px;
     border: none;
     text-indent: 100%;
-    background: url("../images/move-up.png") no-repeat 0px 0px;
+    background: url("../img/move-up.png") no-repeat 0px 0px;
 }
 
 #toTopHover {
@@ -5134,8 +5124,8 @@ ul.twitter-feed a:hover {
     }
 
     #agileinfo-nav_search {
-        font-size: 13px;
-        padding: 11px 10px;
+        font-size: 16px;
+        padding: 12px 20px;
     }
 
     .agile_inner_drop_nav_info {
