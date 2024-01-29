@@ -17,10 +17,12 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Style CSS -->
+  <!-- <link rel="stylesheet" href="../asset/css/minicart.css"> -->
   <link rel="stylesheet" href="../asset/css/style.css">
 </head>
 
 <body>
+
 
   <!-- header-->
   <div class="header-bot my-md-4 my-3" id="site-header">
@@ -43,7 +45,7 @@
                 <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
               </form>
             </div>
-            <!-- //search -->
+
             <!-- cart details -->
             <div
               class="col-lg-3 col-sm-4 top_nav_right text-center mt-sm-0 mt-2 d-flex align-items-center justify-content-between">
@@ -63,18 +65,10 @@
                   </nav>
                 </div>
               </div>
-              <div class="cart-store">
-                <a href="#url"><i class="far fa-heart"></i></a>
-              </div>
-              <div class="wthreecartaits wthreecartaits2 cart cart box_1">
-                <form action="#" method="post" class="last text-right">
-                  <input type="hidden" name="cmd" value="_cart">
-                  <input type="hidden" name="display" value="1">
-                  <button class="btn w3view-cart p-0" type="submit" name="submit" value="">
-                    <img src="../asset/img/cart.png" alt="" class="img-fluid"> Cart
-                  </button>
-                </form>
-              </div>
+
+              <a class="btn btn-primary" href="/capstone2/admin/views/admin.html">
+                <i class="fa fa-user-astronaut img-fluid"> Admin</i>
+              </a>
             </div>
           </div>
         </div>
@@ -137,708 +131,54 @@
   </div>
 
   <!-- !Product -->
-  <div class="ads-grid py-5">
-    <div class="container py-md-5 py-4">
-      <!-- tittle heading -->
-      <h3 class="title_newProduct text-center mb-lg-5 mb-sm-4 mb-3">
-        <span class="font-weight-normal">Our</span> New Products
-      </h3>
-      <div class="container">
+  <!-- Mini cart -->
+  <div class="">
+    <div class="container">
+      <header>
+        <h3 class="title_newProduct text-center mb-lg-5 mb-sm-4 mb-3">
+          <span class="font-weight-normal">Our</span> New Products
+        </h3>
+        <div class="icon-cart">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+          </svg>
+          <span>0</span>
+        </div>
+      </header>
+      <div class="listProduct">
 
-        <div class="agileinfo-ads-display col-lg-12 order-lg-last order-first">
-          <div class="wrapper">
-            <!-- first section -->
-            <div class="product-sec1 px-lg-3">
-              <div class="row">
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/iphone1.png" alt="" class="img-fluid">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                      <span class="product-new-top">New</span>
-                    </div>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Apple iPhone 11</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$280.00</span>
-                        <del>$300.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Apple iPhone X" />
-                            <input type="hidden" name="amount" value="280.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/iphone2.png" alt="" class="img-fluid">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                      <span class="product-new-top">New</span>
-                    </div>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Apple iPhone 11</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$280.00</span>
-                        <del>$300.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Apple iPhone X" />
-                            <input type="hidden" name="amount" value="280.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/iphone3.png" alt="" class="img-fluid">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                      <span class="product-new-top">New</span>
-                    </div>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Apple iPhone 11</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$280.00</span>
-                        <del>$300.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Apple iPhone X" />
-                            <input type="hidden" name="amount" value="280.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/iphone4.png" alt="" class="img-fluid">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                      <span class="product-new-top">New</span>
-                    </div>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Apple iPhone 11</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$280.00</span>
-                        <del>$300.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Apple iPhone X" />
-                            <input type="hidden" name="amount" value="280.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- //first section -->
-            <!-- second section -->
-            <div class="product-sec1 px-lg-3 mt-5 mb-5">
-              <div class="row">
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/iphone5.png" alt="" class="img-fluid">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                      <span class="product-new-top">New</span>
-                    </div>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Apple iPhone 11</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$280.00</span>
-                        <del>$300.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Apple iPhone X" />
-                            <input type="hidden" name="amount" value="280.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/iphone6.png" alt="" class="img-fluid">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                      <span class="product-new-top">New</span>
-                    </div>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Apple iPhone 11</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$280.00</span>
-                        <del>$300.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Apple iPhone X" />
-                            <input type="hidden" name="amount" value="280.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/iphone7.png" alt="" class="img-fluid">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                      <span class="product-new-top">New</span>
-                    </div>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Apple iPhone 11</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$280.00</span>
-                        <del>$300.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Apple iPhone X" />
-                            <input type="hidden" name="amount" value="280.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/iphone8.png" alt="" class="img-fluid">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                      <span class="product-new-top">New</span>
-                    </div>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Apple iPhone 11</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$280.00</span>
-                        <del>$300.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Apple iPhone X" />
-                            <input type="hidden" name="amount" value="280.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- //second section -->
-            <!-- third section -->
-            <div class="px-lg-4 my-5">
-              <div class="product-sec1 product-sec2">
-                <div class="row p-5">
-                  <h3 class="col-md-4 effect-bg">Exciting Deals</h3>
-                  <p class="nut-middle">Up to 40% Off</p>
-                  <div class="col-md-8 bg-right-nut">
-                    <img src="../asset/img/images1.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- //third section -->
-            <!-- fourth section -->
-            <div class="product-sec1 px-lg-4 mt-md-0 mt-5">
-              <div class="row">
-                <div class="col-md-3 product-men">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/Samsung1.png" alt="">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="product-new-top">New</span>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Samsung Galaxy S24 Ultra</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$200.00</span>
-                        <del>$280.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Desert Air Cooler" />
-                            <input type="hidden" name="amount" value="230.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
+      </div>
+    </div>
+    <div class="cartTab">
+      <h1>Shopping Cart</h1>
+      <div class="listCart">
 
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/samsung2.png" alt="">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="product-new-top">New</span>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Samsung Galaxy S24 Ultra</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$200.00</span>
-                        <del>$280.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Desert Air Cooler" />
-                            <input type="hidden" name="amount" value="230.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
+      </div>
+      <div class="btn">
+        <button class="close">CLOSE</button>
+        <button class="checkOut">Check Out</button>
+      </div>
+    </div>
+  </div>
 
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/samsung3.png" alt="">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="product-new-top">New</span>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Samsung Galaxy S24 Ultra</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$200.00</span>
-                        <del>$280.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Desert Air Cooler" />
-                            <input type="hidden" name="amount" value="230.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
 
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/Samsung4.png" alt="">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="product-new-top">New</span>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Samsung Galaxy S24 Ultra</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$200.00</span>
-                        <del>$280.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Desert Air Cooler" />
-                            <input type="hidden" name="amount" value="230.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- //fourth section -->
-            <!-- 5th section -->
-            <div class="product-sec1 px-lg-4 mt-5">
-              <div class="row">
-                <div class="col-md-3 product-men">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/samsung5.png" alt="">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="product-new-top">New</span>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Samsung Galaxy S24 Ultra</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$200.00</span>
-                        <del>$280.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Desert Air Cooler" />
-                            <input type="hidden" name="amount" value="230.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
 
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/samsung6.png" alt="">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="product-new-top">New</span>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Samsung Galaxy S24 Ultra</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$200.00</span>
-                        <del>$280.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Desert Air Cooler" />
-                            <input type="hidden" name="amount" value="230.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/samsung7.png" alt="">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="product-new-top">New</span>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Samsung Galaxy S24 Ultra</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$200.00</span>
-                        <del>$280.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Desert Air Cooler" />
-                            <input type="hidden" name="amount" value="230.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3 product-men mt-md-0 mt-5">
-                  <div class="men-pro-item simpleCart_shelfItem">
-                    <div class="men-thumb-item text-center">
-                      <img src="../asset/img/samsung8.png" alt="">
-                      <div class="men-cart-pro">
-                        <div class="inner-men-cart-pro">
-                          <a href="#url" class="link-product-add-cart">Quick
-                            View</a>
-                        </div>
-                      </div>
-                    </div>
-                    <span class="product-new-top">New</span>
-                    <div class="item-info-product text-center mt-2">
-                      <h4 class="pt-1">
-                        <a href="#url">Samsung Galaxy S24 Ultra</a>
-                      </h4>
-                      <div class="info-product-price">
-                        <span class="item_price">$200.00</span>
-                        <del>$280.00</del>
-                      </div>
-                      <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-                        <form action="#" method="post">
-                          <fieldset>
-                            <input type="hidden" name="cmd" value="_cart" />
-                            <input type="hidden" name="add" value="1" />
-                            <input type="hidden" name="business" value=" " />
-                            <input type="hidden" name="item_name" value="Desert Air Cooler" />
-                            <input type="hidden" name="amount" value="230.00" />
-                            <input type="hidden" name="discount_amount" value="1.00" />
-                            <input type="hidden" name="currency_code" value="USD" />
-                            <input type="hidden" name="return" value=" " />
-                            <input type="hidden" name="cancel_return" value=" " />
-                            <input type="submit" name="submit" value="Add to cart"
-                              class="btn btn-style btn-style-secondary mt-3" />
-                          </fieldset>
-                        </form>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 5th section -->
-          </div>
+  <!-- third section: ads -->
+  <div class="px-lg-4 my-5">
+    <div class="product-sec1 product-sec2">
+      <div class="row p-5">
+        <h3 class="col-md-4 effect-bg">Exciting Deals</h3>
+        <p class="nut-middle">Up to 40% Off</p>
+        <div class="col-md-8 bg-right-nut">
+          <img src="../asset/img/images1.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>
   </div>
 
-  <!--! Onchance  -->
+  <!--! ads  -->
   <div class="join-w3l1 py-sm-5 py-4">
     <div class="container py-xl-4 py-lg-2">
       <div class="row">
@@ -1072,6 +412,7 @@
     </div>
   </footer>
 
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -1083,6 +424,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <!-- axios -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"
+    integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="../customer/controller/shoppingCart.js"></script>
 </body>
 
 </html>
